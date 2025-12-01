@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  padding: 20px;
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  gap: 15px;
+
+}
+
+.item {
+  background: #e88862;
+  padding: 30px;
+  text-align: center;
+  font-size: 14VH;
+  border-radius: 6px;
+  height: 18VH;
+
+  
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .A {
+    grid-column: span 12;
+  }
+  .B {
+    grid-column: span 8;
+  }
+  .C {
+    grid-column: span 4;
+  }
+  .D {
+    grid-column: span 3;
+  }
+  .E {
+    grid-column: span 9;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+<div class="item A">A</div>
+<div class="item B">B</div>
+<div class="item C">C</div>
+<div class="item D">D</div>
+<div class="item E">E</div>
+
+    </div>
+</body>
+</html>
